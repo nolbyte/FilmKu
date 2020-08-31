@@ -9,7 +9,7 @@ const main = () => {
     const SearchMovie = async (event) => {
         event.preventDefault();
         if(searchElement.value.length === 0){
-            //movieElement.renderError(`Getting now playing movies...`);
+            
             try{
                 const result = await moviedb.nowplaying();
                 movieElement.movies = result;
